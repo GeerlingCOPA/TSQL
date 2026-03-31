@@ -17,7 +17,8 @@
 - Dokumentation über MS_Description pflegen
 - Extended Properties über dbo.cop_sp_modifyextendedproperty setzen
 - Für @_value keine NVARCHAR(MAX)-Werte verwenden
-- Beschreibungstexte bei Bedarf explizit nach NVARCHAR(4000) casten
+- Beschreibungstexte für Extended Properties nicht als mehrzeilige Literale direkt im EXEC übergeben
+- Längere Beschreibungstexte zuerst in einer NVARCHAR(4000)-Variable aufbauen und dann an @_value übergeben
 
 ## Antworten und Arbeitsweise
 - Antworten allgemein und dokumentationstauglich formulieren
